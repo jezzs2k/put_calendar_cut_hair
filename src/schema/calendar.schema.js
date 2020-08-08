@@ -27,6 +27,6 @@ const plan = new Schema(
   { timestamps: true }
 );
 
-const Plan = mongoose.model('tests', plan);
+const Plan = mongoose.model('plans', plan);
 
 module.exports = Plan;
