@@ -19,6 +19,10 @@ const plan = new Schema(
       type: Schema.Types.ObjectId,
       ref: 'users',
     },
+    time: {
+      type: Schema.Types.ObjectId,
+      ref: 'times',
+    },
   },
   { timestamps: true }
 );
