@@ -5,7 +5,7 @@ const COMMON_ERROR = {
   NO_PARAMS: 'NO_PARAMS',
 };
 
-const Set_Time_Controller = async () => {
+const Set_Time_Controller = async (req, res) => {
   try {
     const result = await Set_Time(req.body);
 
