@@ -4,12 +4,12 @@ const Schema = mongoose.Schema;
 const time = new Schema(
   {
     startTime: {
-      type: Date,
+      type: String,
       required: true,
     },
-    endTime: {
-      type: Date,
-      required: true,
+    minute: {
+      type: Number,
+      default: 60,
     },
   },
   { timestamps: true }
