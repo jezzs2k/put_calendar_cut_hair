@@ -5,11 +5,11 @@ const time = new Schema(
   {
     startTime: {
       type: Date,
-      required: True,
+      required: true,
     },
     endTime: {
       type: Date,
-      required: True,
+      required: true,
     },
   },
   { timestamps: true }
