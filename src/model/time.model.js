@@ -2,8 +2,17 @@ const Time = require('../schema/time.shema');
 
 const Get_Time = async ({ planId }) => {
   try {
-      const time = await Time.findOne({ planId });
-      
+    const time = await Time.findOne({ planId });
+
+    return { time };
+  } catch (error) {
+    throw error;
+  }
+};
+const Delete_Time = async ({ planId }) => {
+  try {
+    const time = await Time.findOneAndDelete({ plan: planId });
+
     return { time };
   } catch (error) {
     throw error;
@@ -24,4 +33,4 @@ const Set_Time = async ({ startTime, endTime, planId }) => {
   }
 };
 
-module.exports = { Get_Time, Set_Time };
+module.exports = { Get_Time, Set_Time, Delete_Time };
