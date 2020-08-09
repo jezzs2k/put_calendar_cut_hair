@@ -1,3 +1,13 @@
 const Calendar = require('../schema/calendar.schema');
 
-module.exports = {};
+const Get_Calendar = async () => {
+  try {
+    const calendars = await Calendar.find().populate(['user']);
+
+    return { calendars: [...calendars] };
+  } catch (error) {
+    throw error;
+  }
+};
+
+module.exports = { Get_Calendar };
