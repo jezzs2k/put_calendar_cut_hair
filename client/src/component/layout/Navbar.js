@@ -10,7 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <Menu onClick={handleClick} style={{ width: 256 }} mode='inline'>
+    <Menu
+      onClick={handleClick}
+      style={{ width: 256, height: '100%' }}
+      mode='inline'>
       <SubMenu key='sub2' icon={<AppstoreOutlined />} title='Calendar'>
         <Menu.Item key='5'>Morning</Menu.Item>
         <Menu.Item key='6'>Afternoon</Menu.Item>

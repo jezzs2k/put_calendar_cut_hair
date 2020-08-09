@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+}
+
+.App .header {
+  flex: 1;
+  height: 100vh;
+}
+
+.App .body {
+  flex: 5;
+}
