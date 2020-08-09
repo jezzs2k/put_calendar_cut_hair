@@ -1,0 +1,22 @@
+.content_calendar {
+  display: flex;
+}
+
+.content_calendar .left {
+  flex: 1;
+}
+
+.content_calendar .left .blue {
+  color: #1890ff;
+}
+
+.content_calendar .left .focus {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.content_calendar .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
